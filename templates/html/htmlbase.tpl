@@ -1,6 +1,6 @@
 {% block header %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -77,7 +77,6 @@ $(function() {
 {% if config.PROJECT_NAME or config.PROJECT_BRIEF or config.PROJECT_LOGO or config.DISABLE_INDEX and config.SEARCHENGINE %}
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
- <tbody>
  <tr style="height: 56px;">
  {% if config.PROJECT_LOGO %}
   <td id="projectlogo"><img alt="Logo" src="{{ page.relPath }}{{ config.PROJECT_LOGO|stripPath }}"/></td>
@@ -129,7 +128,6 @@ $(function() {
   {% endif %}{# SERVER_BASED_SEARCH #}
  {% endif %}{# DISABLE_INDEX and SEARCHENGINE #}
  </tr>
- </tbody>
 </table>
 </div>
 {% endif %}{# titlearea visible #}

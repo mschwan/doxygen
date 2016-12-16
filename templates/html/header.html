@@ -1,54 +1,53 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-<meta name="generator" content="Doxygen $doxygenversion"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!--BEGIN PROJECT_NAME--><title>$projectname: $title</title><!--END PROJECT_NAME-->
-<!--BEGIN !PROJECT_NAME--><title>$title</title><!--END !PROJECT_NAME-->
-<link href="$relpath^tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="$relpath^jquery.js"></script>
-<script type="text/javascript" src="$relpath^dynsections.js"></script>
-$treeview
-$search
-$mathjax
-<link href="$relpath^$stylesheet" rel="stylesheet" type="text/css" />
-$extrastylesheet
-</head>
-<body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="generator" content="Doxygen $doxygenversion"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--BEGIN PROJECT_NAME--><title>$projectname: $title</title><!--END PROJECT_NAME-->
+  <!--BEGIN !PROJECT_NAME--><title>$title</title><!--END !PROJECT_NAME-->
+  <link href="$relpath^tabs.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="$relpath^jquery.js"></script>
+  <script type="text/javascript" src="$relpath^dynsections.js"></script>
+  $treeview
+  $search
+  $mathjax
+  <link href="$relpath^$stylesheet" rel="stylesheet" type="text/css"/>
+  $extrastylesheet
+</head>
+
+<body>
 <!--BEGIN TITLEAREA-->
-<div id="titlearea">
-<table>
- <tbody>
- <tr>
+<div class="titlearea">
   <!--BEGIN PROJECT_LOGO-->
-  <td id="projectlogo"><img alt="Logo" src="$relpath^$projectlogo"/></td>
+  <div class="projectlogo">
+    <img src="$relpath^$projectlogo"/>
+  </div>
   <!--END PROJECT_LOGO-->
+
   <!--BEGIN PROJECT_NAME-->
-  <td id="projectalign">
-   <div id="projectname">$projectname
-   <!--BEGIN PROJECT_NUMBER-->&#160;<span id="projectnumber">$projectnumber</span><!--END PROJECT_NUMBER-->
-   </div>
-   <!--BEGIN PROJECT_BRIEF--><div id="projectbrief">$projectbrief</div><!--END PROJECT_BRIEF-->
-  </td>
+  <div class="projectname">
+    $projectname
+    <!--BEGIN PROJECT_NUMBER-->
+    <span class="projectnumber">$projectnumber</span>
+    <!--END PROJECT_NUMBER-->
+  </div>
+  <!--BEGIN PROJECT_BRIEF-->
+  <div class="projectbrief">$projectbrief</div>
+  <!--END PROJECT_BRIEF-->
   <!--END PROJECT_NAME-->
+
   <!--BEGIN !PROJECT_NAME-->
-   <!--BEGIN PROJECT_BRIEF-->
-    <td>
-    <div id="projectbrief">$projectbrief</div>
-    </td>
-   <!--END PROJECT_BRIEF-->
+  <!--BEGIN PROJECT_BRIEF-->
+  <div class="projectbrief">$projectbrief</div>
+  <!--END PROJECT_BRIEF-->
   <!--END !PROJECT_NAME-->
+
   <!--BEGIN DISABLE_INDEX-->
-   <!--BEGIN SEARCHENGINE-->
-   <td>$searchbox</td>
-   <!--END SEARCHENGINE-->
+  <!--BEGIN SEARCHENGINE-->
+  <div class="searchbox">$searchbox</div>
+  <!--END SEARCHENGINE-->
   <!--END DISABLE_INDEX-->
- </tr>
- </tbody>
-</table>
 </div>
 <!--END TITLEAREA-->
-<!-- end header part -->

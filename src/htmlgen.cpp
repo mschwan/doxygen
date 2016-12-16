@@ -788,7 +788,6 @@ void HtmlGenerator::writeTabData()
   mgr.copyResource("nav_h.lum",dname);
   mgr.copyResource("nav_f.lum",dname);
   mgr.copyResource("bc_s.luma",dname);
-  mgr.copyResource("doxygen.luma",dname);
   mgr.copyResource("closed.luma",dname);
   mgr.copyResource("open.luma",dname);
   mgr.copyResource("bdwn.luma",dname);

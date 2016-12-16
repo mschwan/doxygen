@@ -1,0 +1,24 @@
+// process this file with
+// 'sass --update doxygen.scss:doxygen.css --sourcemap=none'
+
+/* the standard CSS for doxygen $doxygenversion */
+
+body, table, div, p, dl {
+    font-family: "Liberation Sans", "Helvetica Neue", "Calibri", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* titlearea */
+
+.projectname {
+    font-size: 2rem;
+}
+
+.projectnumber {
+    font-size: 1rem;
+}
+
+.projectbrief {
+}
