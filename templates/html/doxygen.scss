@@ -10,10 +10,31 @@ body, table, div, p, dl {
     padding: 0;
 }
 
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h4, h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 /* titlearea */
 
 .projectname {
-    font-size: 2rem;
+    @extend h2;
+    font-weight: normal;
 }
 
 .projectnumber {
@@ -21,4 +42,22 @@ body, table, div, p, dl {
 }
 
 .projectbrief {
+}
+
+/* header */
+
+.title {
+    @extend h1;
+}
+
+/* member declaration */
+
+table.memberdecls {
+    border-collapse: collapse;
+}
+
+/* member functions */
+
+.memtitle {
+    @extend h3;
 }

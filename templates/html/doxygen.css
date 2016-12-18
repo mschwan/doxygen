@@ -5,9 +5,32 @@ body, table, div, p, dl {
   margin: 0;
   padding: 0; }
 
+h1, .title {
+  font-size: 1.8rem;
+  font-weight: bold; }
+
+h2, .projectname {
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+h3, .memtitle {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+h4, h5 {
+  font-size: 1rem;
+  font-weight: bold; }
+
 /* titlearea */
 .projectname {
-  font-size: 2rem; }
+  font-weight: normal; }
 
 .projectnumber {
   font-size: 1rem; }
+
+/* header */
+/* member declaration */
+table.memberdecls {
+  border-collapse: collapse; }
+
+/* member functions */
