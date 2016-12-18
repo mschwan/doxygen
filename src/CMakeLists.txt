@@ -79,6 +79,14 @@ add_custom_command(
 )
 set_source_files_properties(${GENERATED_SRC}/lang_cfg.h PROPERTIES GENERATED 1)
 
+# SASS files for HTML output
+add_custom_command(
+    COMMENT  "Generating SASS files"
+    COMMAND sass --update ${CMAKE_SOURCE_DIR}/templates/html/:${CMAKE_SOURCE_DIR}/templates/html/ --sourcemap=none
+    DEPENDS ${CMAKE_SOURCE_DIR}/templates/html/*.scss
+    OUTPUT ${CMAKE_SOURCE_DIR}/templates/html/doxygen.css
+)
+
 # all resource files
 file(GLOB RESOURCES ${CMAKE_SOURCE_DIR}/templates/*/*)
 
