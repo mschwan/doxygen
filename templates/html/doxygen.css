@@ -34,3 +34,7 @@ table.memberdecls {
   border-collapse: collapse; }
 
 /* member functions */
+/* doxygen version info */
+.doxygenversion {
+  border-top: 1px solid black;
+  padding: 1em 0; }

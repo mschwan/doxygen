@@ -1,11 +1,13 @@
-// process this file with
-// 'sass --update doxygen.scss:doxygen.css --sourcemap=none'
+// process all stylesheets with:
+// 'sass --update ./:./ --sourcemap=none'
 
 /* the standard CSS for doxygen $doxygenversion */
 
+@import "main";
+
 body, table, div, p, dl {
-    font-family: "Liberation Sans", "Helvetica Neue", "Calibri", sans-serif;
-    font-size: 14px;
+    font-family: $font-sans;
+    font-size: $font-size;
     margin: 0;
     padding: 0;
 }
@@ -60,4 +62,11 @@ table.memberdecls {
 
 .memtitle {
     @extend h3;
+}
+
+/* doxygen version info */
+
+.doxygenversion {
+    border-top: 1px solid black;
+    padding: 1em 0;
 }
