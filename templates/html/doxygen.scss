@@ -34,6 +34,10 @@ h4, h5 {
 
 /* titlearea */
 
+.titlearea {
+    padding: 0.5rem 1rem;
+}
+
 .projectname {
     @extend h2;
     font-weight: normal;
@@ -46,10 +50,39 @@ h4, h5 {
 .projectbrief {
 }
 
+/* nav-path */
+
+#nav-path ul {
+    list-style-type: none;
+    padding: 0 1rem;
+
+    li.navelem {
+        display: inline;
+
+        a {
+            padding: 0.5em 1em;
+        }
+
+        &:after {
+            content: ">";
+        }
+    }
+}
+
 /* header */
 
-.title {
-    @extend h1;
+.header {
+    padding: 0 1rem;
+
+    .title {
+        @extend h1;
+    }
+}
+
+/* content */
+
+.contents {
+    padding: 0 1rem;
 }
 
 /* member declaration */

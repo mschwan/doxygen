@@ -5,7 +5,7 @@ body, table, div, p, dl {
   margin: 0;
   padding: 0; }
 
-h1, .title {
+h1, .header .title {
   font-size: 1.8rem;
   font-weight: bold; }
 
@@ -22,13 +22,34 @@ h4, h5 {
   font-weight: bold; }
 
 /* titlearea */
+.titlearea {
+  padding: 0.5rem 1rem; }
+
 .projectname {
   font-weight: normal; }
 
 .projectnumber {
   font-size: 1rem; }
 
+/* nav-path */
+#nav-path ul {
+  list-style-type: none;
+  padding: 0 1rem; }
+  #nav-path ul li.navelem {
+    display: inline; }
+    #nav-path ul li.navelem a {
+      padding: 0.5em 1em; }
+    #nav-path ul li.navelem:after {
+      content: ">"; }
+
 /* header */
+.header {
+  padding: 0 1rem; }
+
+/* content */
+.contents {
+  padding: 0 1rem; }
+
 /* member declaration */
 table.memberdecls {
   border-collapse: collapse; }
