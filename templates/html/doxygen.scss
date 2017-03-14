@@ -10,32 +10,44 @@ body, table, div, p, dl {
     font-size: $font-size;
     margin: 0;
     padding: 0;
+    color: $gray1;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: $black;
 }
 
 h1 {
     font-size: 1.8rem;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 h3 {
     font-size: 1.2rem;
-    font-weight: bold;
 }
 
 h4, h5 {
     font-size: 1rem;
-    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: $blue1;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* titlearea */
 
 .titlearea {
     padding: 0.5rem 1rem;
+    background-color: $snow;
 }
 
 .projectname {
@@ -63,8 +75,13 @@ h4, h5 {
             padding: 0.5em 1em;
         }
 
+        &:first-child a {
+            padding-left: 0 !important;
+        }
+
         &:after {
-            content: ">";
+            content: "/";
+            cursor: default;
         }
     }
 }
@@ -72,17 +89,26 @@ h4, h5 {
 /* header */
 
 .header {
-    padding: 0 1rem;
+    padding: 0 2rem;
+    text-align: center;
+    border-bottom: 1px solid $gray3;
+
+    .summary {
+        padding: 0.5em 0;
+    }
 
     .title {
         @extend h1;
+        padding: 0.5rem 0;
     }
 }
 
 /* content */
 
 .contents {
-    padding: 0 1rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    max-width: 1080px;
 }
 
 /* member declaration */
@@ -95,11 +121,39 @@ table.memberdecls {
 
 .memtitle {
     @extend h3;
+    margin: 0;
+    padding: 1rem 2rem;
+    position: relative;
+    left: -2rem;
+    width: 100%;
+
+    .permalink {
+        position: relative;
+        left: -1.5ex;
+        margin-right: -1ex;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        visibility: hidden;
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:hover .permalink {
+        visibility: visible;
+    }
+}
+
+hr {
+    color: transparent;
+    border-bottom: 1px solid $gray3;
 }
 
 /* doxygen version info */
 
 .doxygenversion {
-    border-top: 1px solid black;
-    padding: 1em 0;
+    border-top: 1px solid $gray3;
+    padding: 1em;
 }

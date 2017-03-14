@@ -1,7 +1,8 @@
 @import "main";
 
 #main-nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $gray3;
+    background-color: $snow;
 }
 
 ul#main-menu {
@@ -43,7 +44,7 @@ ul#main-menu {
         display: block;
         position: absolute;
         text-align: initial;
-        border: 1px solid black;
+        border: 1px solid $gray3;
 
         a {
             padding: 0.3em 0.8em;

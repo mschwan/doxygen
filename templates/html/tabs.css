@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 #main-nav {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #dddddd;
+  background-color: #fafafa; }
 
 ul#main-menu {
   padding: 0;
@@ -29,7 +31,7 @@ ul#main-menu {
     display: block;
     position: absolute;
     text-align: initial;
-    border: 1px solid black; }
+    border: 1px solid #dddddd; }
     ul#main-menu li:hover > ul a {
       padding: 0.3em 0.8em; }
       ul#main-menu li:hover > ul a:hover {

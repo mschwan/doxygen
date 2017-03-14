@@ -1,29 +1,38 @@
 /* the standard CSS for doxygen $doxygenversion */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body, table, div, p, dl {
-  font-family: "Liberation Sans", "Helvetica Neue", "Calibri", sans-serif;
-  font-size: 14px;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
+  font-size: 15px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #444444; }
+
+h1, .header .title, h2, .projectname, h3, .memtitle, h4, h5 {
+  font-weight: bold;
+  color: #222222; }
 
 h1, .header .title {
-  font-size: 1.8rem;
-  font-weight: bold; }
+  font-size: 1.8rem; }
 
 h2, .projectname {
-  font-size: 1.5rem;
-  font-weight: bold; }
+  font-size: 1.5rem; }
 
 h3, .memtitle {
-  font-size: 1.2rem;
-  font-weight: bold; }
+  font-size: 1.2rem; }
 
 h4, h5 {
-  font-size: 1rem;
-  font-weight: bold; }
+  font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #3084bb; }
+  a:hover {
+    text-decoration: underline; }
 
 /* titlearea */
 .titlearea {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  background-color: #fafafa; }
 
 .projectname {
   font-weight: normal; }
@@ -39,23 +48,57 @@ h4, h5 {
     display: inline; }
     #nav-path ul li.navelem a {
       padding: 0.5em 1em; }
+    #nav-path ul li.navelem:first-child a {
+      padding-left: 0 !important; }
     #nav-path ul li.navelem:after {
-      content: ">"; }
+      content: "/";
+      cursor: default; }
 
 /* header */
 .header {
-  padding: 0 1rem; }
+  padding: 0 2rem;
+  text-align: center;
+  border-bottom: 1px solid #dddddd; }
+  .header .summary {
+    padding: 0.5em 0; }
+  .header .title {
+    padding: 0.5rem 0; }
 
 /* content */
 .contents {
-  padding: 0 1rem; }
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 1080px; }
 
 /* member declaration */
 table.memberdecls {
   border-collapse: collapse; }
 
 /* member functions */
+.memtitle {
+  margin: 0;
+  padding: 1rem 2rem;
+  position: relative;
+  left: -2rem;
+  width: 100%; }
+  .memtitle .permalink {
+    position: relative;
+    left: -1.5ex;
+    margin-right: -1ex;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    visibility: hidden; }
+    .memtitle .permalink a:hover {
+      text-decoration: none; }
+  .memtitle:hover .permalink {
+    visibility: visible; }
+
+hr {
+  color: transparent;
+  border-bottom: 1px solid #dddddd; }
+
 /* doxygen version info */
 .doxygenversion {
-  border-top: 1px solid black;
-  padding: 1em 0; }
+  border-top: 1px solid #dddddd;
+  padding: 1em; }
