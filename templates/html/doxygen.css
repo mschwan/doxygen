@@ -1,5 +1,6 @@
 /* the standard CSS for doxygen $doxygenversion */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 body, table, div, p, dl {
   font-family: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
   font-size: 15px;
@@ -28,6 +29,9 @@ a {
   color: #3084bb; }
   a:hover {
     text-decoration: underline; }
+
+p {
+  margin-bottom: 1em; }
 
 /* titlearea */
 .titlearea {
@@ -94,6 +98,18 @@ table.memberdecls {
   .memtitle:hover .permalink {
     visibility: visible; }
 
+/* code fragments */
+.fragment {
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 1em;
+  padding: 0.5em 0.7em;
+  white-space: pre-wrap;
+  border: 1px solid #dddddd;
+  border-radius: 3px; }
+  .fragment .line {
+    font-family: inherit; }
+
+/* bottom rule */
 hr {
   color: transparent;
   border-bottom: 1px solid #dddddd; }

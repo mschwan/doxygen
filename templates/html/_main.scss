@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 $font-sans: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
+$font-mono: "Source Code Pro", monospace;
 $font-size: 15px;
 
 $black: #222222;
@@ -11,3 +13,6 @@ $gray2: #666666;
 $gray3: #dddddd;
 
 $blue1: #3084bb;
+
+$radius1: 3px;
+$radius2: 5px;

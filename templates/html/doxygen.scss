@@ -43,6 +43,10 @@ a {
     }
 }
 
+p {
+    margin-bottom: 1em;
+}
+
 /* titlearea */
 
 .titlearea {
@@ -145,6 +149,23 @@ table.memberdecls {
         visibility: visible;
     }
 }
+
+/* code fragments */
+
+.fragment {
+    font-family: $font-mono;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    white-space: pre-wrap;
+    border: 1px solid $gray3;
+    border-radius: 3px;
+
+    .line {
+        font-family: inherit;
+    }
+}
+
+/* bottom rule */
 
 hr {
     color: transparent;
