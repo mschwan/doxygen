@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 #main-nav {
   border-bottom: 1px solid #dddddd;
   background-color: #fafafa; }
@@ -10,7 +12,7 @@ ul#main-menu {
   list-style: none;
   text-align: center; }
   ul#main-menu ul {
-    background-color: white;
+    background-color: #ffffff;
     display: none;
     padding: 0.5em;
     z-index: 10; }
@@ -26,9 +28,10 @@ ul#main-menu {
   ul#main-menu a {
     padding: 1em;
     display: block;
-    color: #444444; }
+    color: #666666; }
     ul#main-menu a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #222222; }
   ul#main-menu li:hover > ul {
     display: block;
     position: absolute;

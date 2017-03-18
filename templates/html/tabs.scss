@@ -2,7 +2,7 @@
 
 #main-nav {
     border-bottom: 1px solid $gray3;
-    background-color: $snow;
+    background-color: $snow1;
 }
 
 ul#main-menu {
@@ -12,7 +12,7 @@ ul#main-menu {
     text-align: center;
 
     ul {
-        background-color: white;
+        background-color: $white;
         display: none;
         padding: 0.5em;
         z-index: 10;
@@ -34,10 +34,11 @@ ul#main-menu {
     a {
         padding: 1em;
         display: block;
-        color: $gray1;
+        color: $gray2;
 
         &:hover {
             text-decoration: none;
+            color: $black;
         }
     }
 

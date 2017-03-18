@@ -1,14 +1,17 @@
 /* the standard CSS for doxygen $doxygenversion */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 body, table, div, p, dl {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Calibri", sans-serif;
   font-size: 15px;
   margin: 0;
   padding: 0;
   color: #444444; }
 
 h1, .header .title, h2, .projectname, h3, .memtitle, h4, h5 {
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #222222; }
 
@@ -51,12 +54,14 @@ p {
   #nav-path ul li.navelem {
     display: inline; }
     #nav-path ul li.navelem a {
-      padding: 0.5em 1em; }
-    #nav-path ul li.navelem:first-child a {
-      padding-left: 0 !important; }
+      padding: 0.5em 1em;
+      font-weight: bold;
+      font-size: 80%;
+      color: #222222; }
     #nav-path ul li.navelem:after {
       content: "/";
-      cursor: default; }
+      cursor: default;
+      color: #444444; }
 
 /* header */
 .header {
@@ -65,6 +70,11 @@ p {
   border-bottom: 1px solid #dddddd; }
   .header .summary {
     padding: 0.5em 0; }
+    .header .summary a {
+      color: #222222;
+      font-weight: bold;
+      font-size: 80%;
+      padding: 0.5em; }
   .header .title {
     padding: 0.5rem 0; }
 
@@ -77,6 +87,45 @@ p {
 /* member declaration */
 table.memberdecls {
   border-collapse: collapse; }
+  table.memberdecls tr:nth-child(2) {
+    border-top: 1px solid #dddddd; }
+  table.memberdecls tr[class^="separator:"] {
+    display: none; }
+  table.memberdecls tr[class^="memitem:"] {
+    color: #222222;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd; }
+    table.memberdecls tr[class^="memitem:"] a.el {
+      color: inherit;
+      font-weight: bold; }
+    table.memberdecls tr[class^="memitem:"]:nth-child(2n) {
+      background-color: #fafafa; }
+    table.memberdecls tr[class^="memitem:"]:nth-child(2n+1) {
+      background-color: #fcfcfc; }
+  table.memberdecls tr[class^="memdesc:"] {
+    color: #666666;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd; }
+    table.memberdecls tr[class^="memdesc:"]:nth-child(2n+1) {
+      background-color: #fafafa; }
+    table.memberdecls tr[class^="memdesc:"]:nth-child(2n) {
+      background-color: #fcfcfc; }
+  table.memberdecls .memItemLeft {
+    white-space: nowrap;
+    padding: 0.5em 0.2em 0 0.5em; }
+  table.memberdecls .memItemRight {
+    width: 100%;
+    padding: 0.5em 0.5em 0 0; }
+  table.memberdecls .mdescLeft {
+    padding: 0 0.2em 0.5em 0.5em; }
+  table.memberdecls .mdescRight {
+    padding: 0 0.5em 0.5em 0; }
+
+/* grouping headers */
+.groupheader {
+  margin: 2em 0 0.7em 0;
+  border-bottom: 1px solid #dddddd; }
 
 /* member functions */
 .memtitle {
@@ -102,7 +151,7 @@ table.memberdecls {
 .fragment {
   font-family: "Source Code Pro", monospace;
   margin-bottom: 1em;
-  padding: 0.5em 0.7em;
+  padding: 0.5em;
   white-space: pre-wrap;
   border: 1px solid #dddddd;
   border-radius: 3px; }
@@ -112,7 +161,8 @@ table.memberdecls {
 /* bottom rule */
 hr {
   color: transparent;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd;
+  margin: 1rem 0; }
 
 /* doxygen version info */
 .doxygenversion {

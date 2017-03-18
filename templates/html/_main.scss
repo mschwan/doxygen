@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-$font-sans: "Source Sans Pro", "Helvetica Neue", "Calibri", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$font-sans: "Open Sans", "Helvetica Neue", "Calibri", sans-serif;
+$font-header: "Lato", sans-serif;
 $font-mono: "Source Code Pro", monospace;
 $font-size: 15px;
 
 $black: #222222;
-$snow: #fafafa;
+$white: #ffffff;
+$snow1: #fafafa;
+$snow2: #fcfcfc;
 
 $gray1: #444444;
 $gray2: #666666;
