@@ -219,6 +219,8 @@ table.memberdecls {
         -webkit-user-select: none;
         user-select: none;
         visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s, opacity ease 0.2s;
 
         a:hover {
             text-decoration: none;
@@ -227,6 +229,7 @@ table.memberdecls {
 
     &:hover .permalink {
         visibility: visible;
+        opacity: 1;
     }
 }
 

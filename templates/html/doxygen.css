@@ -1,4 +1,6 @@
 /* the standard CSS for doxygen $doxygenversion */
+/* DO NOT EDIT THE CSS FILE DIRECTLY! */
+/* INSTEAD MAKE YOUR CHANGES IN THE SCSS FILE! */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
@@ -141,11 +143,14 @@ table.memberdecls {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    visibility: hidden; }
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity ease 0.2s; }
     .memtitle .permalink a:hover {
       text-decoration: none; }
   .memtitle:hover .permalink {
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1; }
 
 /* code fragments */
 .fragment {
