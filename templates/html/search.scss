@@ -1,0 +1,62 @@
+/* DO NOT EDIT THE CSS FILE DIRECTLY! */
+/* INSTEAD MAKE YOUR CHANGES IN THE SCSS FILE! */
+
+@import "main";
+
+#MSearchBox {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin-right: 1em;
+
+    .left {
+        display: flex;
+
+        #MSearchSelect {
+            height: 24px;
+            width: 24px;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #MSearchField {
+            height: 2em;
+            margin: auto;
+            border: none;
+            color: $gray1;
+            padding: 0 0.5em;
+        }
+    }
+
+    .right {
+        position: absolute;
+        right: 1em;
+        margin: 0.666em 0;
+
+        #MSearchClose {
+            height: 2em;
+            width: 2em;
+            display: flex;
+            padding: 0;
+
+            #MSearchCloseImg {
+                height: 24px;
+                width: 24px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+#MSearchResultsWindow {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    border: 1px solid $gray3;
+}
+
+#MSearchSelectWindow {
+    .SelectItem {
+        display: block;
+    }
+}

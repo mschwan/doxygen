@@ -58,7 +58,7 @@ static void writeClientSearchBox(FTextStream &t,const char *relPath)
 {
   t << "        <div id=\"MSearchBox\" class=\"MSearchBoxInactive\">\n";
   t << "        <span class=\"left\">\n";
-  t << "          <img id=\"MSearchSelect\" src=\"" << relPath << "search/mag_sel.png\"\n";
+  t << "          <img id=\"MSearchSelect\" src=\"" << relPath << "search/mag_sel.svg\"\n";
   t << "               onmouseover=\"return searchBox.OnSearchSelectShow()\"\n";
   t << "               onmouseout=\"return searchBox.OnSearchSelectHide()\"\n";
   t << "               alt=\"\"/>\n";
@@ -69,7 +69,7 @@ static void writeClientSearchBox(FTextStream &t,const char *relPath)
   t << "               onkeyup=\"searchBox.OnSearchFieldChange(event)\"/>\n";
   t << "          </span><span class=\"right\">\n";
   t << "            <a id=\"MSearchClose\" href=\"javascript:searchBox.CloseResultsWindow()\">"
-    << "<img id=\"MSearchCloseImg\" border=\"0\" src=\"" << relPath << "search/close.png\" alt=\"\"/></a>\n";
+    << "<img id=\"MSearchCloseImg\" border=\"0\" src=\"" << relPath << "search/close.svg\" alt=\"\"/></a>\n";
   t << "          </span>\n";
   t << "        </div>\n";
 }
@@ -91,7 +91,7 @@ static void writeServerSearchBox(FTextStream &t,const char *relPath,bool highlig
     t << "search.php";
   }
   t << "\" method=\"get\">\n";
-  t << "              <img id=\"MSearchSelect\" src=\"" << relPath << "search/mag.png\" alt=\"\"/>\n";
+  t << "              <img id=\"MSearchSelect\" src=\"" << relPath << "search/mag.svg\" alt=\"\"/>\n";
   if (!highlightSearch)
   {
     t << "              <input type=\"text\" id=\"MSearchField\" name=\"query\" value=\""
@@ -793,14 +793,6 @@ void HtmlGenerator::writeTabData()
   mgr.copyResource("bdwn.luma",dname);
   mgr.copyResource("sync_on.luma",dname);
   mgr.copyResource("sync_off.luma",dname);
-
-  //{
-  //  unsigned char shadow[6] = { 5, 5, 5, 5, 5, 5 };
-  //  unsigned char shadow_alpha[6]  = { 80, 60, 40, 20, 10, 0 };
-  //  ColoredImage img(1,6,shadow,shadow_alpha,0,0,100);
-  //  img.save(dname+"/nav_g.png");
-  //}
-  mgr.copyResource("nav_g.png",dname);
 }
 
 void HtmlGenerator::writeSearchData(const char *dir)
@@ -809,23 +801,17 @@ void HtmlGenerator::writeSearchData(const char *dir)
   //writeImgData(dir,serverBasedSearch ? search_server_data : search_client_data);
   ResourceMgr &mgr = ResourceMgr::instance();
 
-  mgr.copyResource("search_l.png",dir);
-  Doxygen::indexList->addImageFile("search/search_l.png");
-  mgr.copyResource("search_m.png",dir);
-  Doxygen::indexList->addImageFile("search/search_m.png");
-  mgr.copyResource("search_r.png",dir);
-  Doxygen::indexList->addImageFile("search/search_r.png");
   if (serverBasedSearch)
   {
-    mgr.copyResource("mag.png",dir);
-    Doxygen::indexList->addImageFile("search/mag.png");
+    mgr.copyResource("mag.svg",dir);
+    Doxygen::indexList->addImageFile("search/mag.svg");
   }
   else
   {
-    mgr.copyResource("close.png",dir);
-    Doxygen::indexList->addImageFile("search/close.png");
-    mgr.copyResource("mag_sel.png",dir);
-    Doxygen::indexList->addImageFile("search/mag_sel.png");
+    mgr.copyResource("close.svg",dir);
+    Doxygen::indexList->addImageFile("search/close.svg");
+    mgr.copyResource("mag_sel.svg",dir);
+    Doxygen::indexList->addImageFile("search/mag_sel.svg");
   }
 
   QCString searchDirName = Config_getString(HTML_OUTPUT)+"/search";

@@ -12,7 +12,9 @@ ul#main-menu {
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;
+    display: flex;
+    flex-flow: row;
+    position: relative;
 
     ul {
         background-color: $white;
@@ -23,15 +25,11 @@ ul#main-menu {
 
     li {
         list-style: none;
-        display: inline-block;
-        position: relative;
         white-space: nowrap;
     }
 
     & > li:last-of-type {
-        float: none !important;
-        position: absolute;
-        right: 0;
+        flex: 2;
     }
 
     a {
@@ -46,9 +44,9 @@ ul#main-menu {
     }
 
     li:hover > ul {
-        display: block;
+        display: flex;
+        flex-flow: column;
         position: absolute;
-        text-align: initial;
         border: 1px solid $gray3;
 
         a {
@@ -59,14 +57,10 @@ ul#main-menu {
             }
         }
 
-        li {
-            display: block;
-
-            &:hover ul {
-                position: absolute;
-                left: 100%;
-                top: -0.5em;
-            }
+        ul {
+            left: 100%;
+            margin-top: -2.5em;
+            margin-left: -0.5em;
         }
     }
 }

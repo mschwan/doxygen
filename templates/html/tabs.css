@@ -12,7 +12,9 @@ ul#main-menu {
   padding: 0;
   margin: 0;
   list-style: none;
-  text-align: center; }
+  display: flex;
+  flex-flow: row;
+  position: relative; }
   ul#main-menu ul {
     background-color: #ffffff;
     display: none;
@@ -20,13 +22,9 @@ ul#main-menu {
     z-index: 10; }
   ul#main-menu li {
     list-style: none;
-    display: inline-block;
-    position: relative;
     white-space: nowrap; }
   ul#main-menu > li:last-of-type {
-    float: none !important;
-    position: absolute;
-    right: 0; }
+    flex: 2; }
   ul#main-menu a {
     padding: 1em;
     display: block;
@@ -35,17 +33,15 @@ ul#main-menu {
       text-decoration: none;
       color: #222222; }
   ul#main-menu li:hover > ul {
-    display: block;
+    display: flex;
+    flex-flow: column;
     position: absolute;
-    text-align: initial;
     border: 1px solid #dddddd; }
     ul#main-menu li:hover > ul a {
       padding: 0.3em 0.8em; }
       ul#main-menu li:hover > ul a:hover {
         color: inherit; }
-    ul#main-menu li:hover > ul li {
-      display: block; }
-      ul#main-menu li:hover > ul li:hover ul {
-        position: absolute;
-        left: 100%;
-        top: -0.5em; }
+    ul#main-menu li:hover > ul ul {
+      left: 100%;
+      margin-top: -2.5em;
+      margin-left: -0.5em; }

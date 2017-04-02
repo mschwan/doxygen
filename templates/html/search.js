@@ -473,13 +473,13 @@ function SearchResults(name)
       var element = this.FindChildElement(id);
       if (element)
       {
-        if (element.style.display == 'block')
+        if (element.style.display == 'flex')
         {
           element.style.display = 'none';
         }
         else
         {
-          element.style.display = 'block';
+          element.style.display = 'flex';
         }
       }
     }
