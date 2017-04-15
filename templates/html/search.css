@@ -42,5 +42,41 @@
   background-color: #ffffff;
   border: 1px solid #dddddd; }
 
-#MSearchSelectWindow .SelectItem {
-  display: block; }
+#MSearchSelectWindow {
+  display: none;
+  position: absolute;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  padding: 0.5em;
+  margin-top: 0.5rem; }
+  #MSearchSelectWindow:before {
+    position: absolute;
+    top: -0.5rem;
+    left: calc(12px - 0.5rem);
+    display: inline-block;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #dddddd;
+    border-left: 0.5rem solid transparent;
+    content: ""; }
+  #MSearchSelectWindow:after {
+    position: absolute;
+    top: calc(-0.5rem + 1.4px);
+    left: calc(12px - 0.5rem + 1.4px);
+    display: inline-block;
+    border-right: calc(0.5rem - 1.4px) solid transparent;
+    border-bottom: calc(0.5rem - 1px) solid #ffffff;
+    border-left: calc(0.5rem - 1px) solid transparent;
+    content: ""; }
+  #MSearchSelectWindow .SelectItem {
+    display: block;
+    padding: 0.3em 0.8em;
+    outline: none;
+    text-decoration: none;
+    color: #666666; }
+    #MSearchSelectWindow .SelectItem:hover {
+      text-decoration: none;
+      color: #222222; }
+    #MSearchSelectWindow .SelectItem .SelectionMark {
+      font-family: monospace;
+      margin-right: 0.5em;
+      margin-left: -0.5em; }
