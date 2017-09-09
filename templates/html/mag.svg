@@ -13,7 +13,7 @@
    id="svg2"
    version="1.1"
    sodipodi:docname="mag.svg"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -27,9 +27,9 @@
      inkscape:window-height="1016"
      id="namedview9"
      showgrid="false"
-     inkscape:zoom="11.313708"
-     inkscape:cx="9.9380631"
-     inkscape:cy="16.226899"
+     inkscape:zoom="15.999999"
+     inkscape:cx="5.378354"
+     inkscape:cy="10.19947"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -56,18 +56,18 @@
      cy="10"
      cx="11"
      id="path4489"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#23210e;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
      r="4" />
   <path
      id="path4494"
      d="m 16,15 2,2"
-     style="fill:none;fill-rule:evenodd;stroke:#23210e;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#333333;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
      id="path4496"
      d="M 16,15 14,13"
-     style="fill:none;fill-rule:evenodd;stroke:#23210e;stroke-width:1.39999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#333333;stroke-width:1.39999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
 </svg>

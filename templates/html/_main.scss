@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-$font-sans: "Open Sans", "Helvetica Neue", "Calibri", sans-serif;
+$font-sans: "Lato", sans-serif;
 $font-header: "Lato", sans-serif;
-$font-mono: "Source Code Pro", monospace;
-$font-size: 15px;
+$font-mono: "Fira Mono", monospace;
+$font-size: inherit;
 
-$black: #222222;
+// rename to match brightness, e.g. gray50 for 50% brightness
+$black: #333333;
 $white: #ffffff;
-$snow1: #fafafa;
-$snow2: #fcfcfc;
+$snow1: #fbfbfb;
+$snow2: #fdfdfd;
 
 $gray1: #444444;
 $gray2: #666666;
 $gray3: #dddddd;
 
-$blue1: #3084bb;
+$blue1: #118ab2;
 
 $radius1: 3px;
 $radius2: 5px;
+
+$shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);

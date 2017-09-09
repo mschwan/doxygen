@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h3 {
@@ -49,25 +49,28 @@ a {
 
 p {
     margin-bottom: 1em;
+    line-height: 1.0;
 }
 
 /* titlearea */
 
 .titlearea {
     padding: 0.5rem 1rem;
-    background-color: $snow1;
+    border-bottom: 1px solid $gray3;
 }
 
 .projectname {
-    @extend h2;
-    font-weight: normal;
+    @extend h3;
+    font-weight: bold;
 }
 
 .projectnumber {
-    font-size: 1rem;
+    font-weight: normal;
+    color: $gray1;
 }
 
 .projectbrief {
+    @extend .projectnumber;
 }
 
 /* nav-path */

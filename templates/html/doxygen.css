@@ -1,29 +1,27 @@
 /* the standard CSS for doxygen $doxygenversion */
 /* DO NOT EDIT THE CSS FILE DIRECTLY! */
 /* INSTEAD MAKE YOUR CHANGES IN THE SCSS FILE! */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
 body, table, div, p, dl {
-  font-family: "Open Sans", "Helvetica Neue", "Calibri", sans-serif;
-  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-size: inherit;
   margin: 0;
   padding: 0;
   color: #444444; }
 
-h1, .header .title, h2, .projectname, h3, .memtitle, h4, h5 {
+h1, .header .title, h2, h3, .projectname, .memtitle, h4, h5 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  color: #222222; }
+  color: #333333; }
 
 h1, .header .title {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
-h2, .projectname {
-  font-size: 1.5rem; }
+h2 {
+  font-size: 1.4rem; }
 
-h3, .memtitle {
+h3, .projectname, .memtitle {
   font-size: 1.2rem; }
 
 h4, h5 {
@@ -31,23 +29,25 @@ h4, h5 {
 
 a {
   text-decoration: none;
-  color: #3084bb; }
+  color: #118ab2; }
   a:hover {
     text-decoration: underline; }
 
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1.0; }
 
 /* titlearea */
 .titlearea {
   padding: 0.5rem 1rem;
-  background-color: #fafafa; }
+  border-bottom: 1px solid #dddddd; }
 
 .projectname {
-  font-weight: normal; }
+  font-weight: bold; }
 
-.projectnumber {
-  font-size: 1rem; }
+.projectnumber, .projectbrief {
+  font-weight: normal;
+  color: #444444; }
 
 /* nav-path */
 #nav-path ul {
@@ -59,7 +59,7 @@ p {
       padding: 0.5em 1em;
       font-weight: bold;
       font-size: 80%;
-      color: #222222; }
+      color: #333333; }
     #nav-path ul li.navelem:after {
       content: "/";
       cursor: default;
@@ -73,7 +73,7 @@ p {
   .header .summary {
     padding: 0.5em 0; }
     .header .summary a {
-      color: #222222;
+      color: #333333;
       font-weight: bold;
       font-size: 80%;
       padding: 0.5em; }
@@ -94,25 +94,25 @@ table.memberdecls {
   table.memberdecls tr[class^="separator:"] {
     display: none; }
   table.memberdecls tr[class^="memitem:"] {
-    color: #222222;
+    color: #333333;
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd; }
     table.memberdecls tr[class^="memitem:"] a.el {
       color: inherit;
       font-weight: bold; }
     table.memberdecls tr[class^="memitem:"]:nth-child(2n) {
-      background-color: #fafafa; }
+      background-color: #fbfbfb; }
     table.memberdecls tr[class^="memitem:"]:nth-child(2n+1) {
-      background-color: #fcfcfc; }
+      background-color: #fdfdfd; }
   table.memberdecls tr[class^="memdesc:"] {
     color: #666666;
     border-bottom: 1px solid #dddddd;
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd; }
     table.memberdecls tr[class^="memdesc:"]:nth-child(2n+1) {
-      background-color: #fafafa; }
+      background-color: #fbfbfb; }
     table.memberdecls tr[class^="memdesc:"]:nth-child(2n) {
-      background-color: #fcfcfc; }
+      background-color: #fdfdfd; }
   table.memberdecls .memItemLeft {
     white-space: nowrap;
     padding: 0.5em 0.2em 0 0.5em; }
@@ -154,7 +154,7 @@ table.memberdecls {
 
 /* code fragments */
 .fragment {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Fira Mono", monospace;
   margin-bottom: 1em;
   padding: 0.5em;
   white-space: pre-wrap;
@@ -163,9 +163,9 @@ table.memberdecls {
   .fragment .line {
     font-family: inherit; }
 
-/* namespace list */
+/* namespace and class list */
 .icon {
-  background-color: #222222;
+  background-color: #333333;
   color: #ffffff;
   margin: 0 0.5em;
   padding: 0.05em 0.4em;
