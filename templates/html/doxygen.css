@@ -35,7 +35,7 @@ a {
 
 p {
   margin-bottom: 1em;
-  line-height: 1.0; }
+  line-height: 1.4; }
 
 /* titlearea */
 .titlearea {
@@ -159,9 +159,17 @@ table.memberdecls {
   padding: 0.5em;
   white-space: pre-wrap;
   border: 1px solid #dddddd;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-size: 90%; }
   .fragment .line {
     font-family: inherit; }
+
+code {
+  color: #ef4765;
+  background-color: rgba(239, 71, 101, 0.1);
+  font-size: 110%;
+  padding: 0.15em 0.25em;
+  border-radius: 3px; }
 
 /* namespace and class list */
 .icon {

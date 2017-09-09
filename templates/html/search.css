@@ -54,6 +54,7 @@
   display: none;
   position: absolute;
   border: 1px solid #dddddd;
+  border-radius: 3px;
   background-color: #ffffff;
   padding: 0.5em;
   margin-top: 0.5rem;

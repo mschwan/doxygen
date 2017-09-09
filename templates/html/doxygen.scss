@@ -49,7 +49,7 @@ a {
 
 p {
     margin-bottom: 1em;
-    line-height: 1.0;
+    line-height: 1.4;
 }
 
 /* titlearea */
@@ -245,10 +245,19 @@ table.memberdecls {
     white-space: pre-wrap;
     border: 1px solid $gray3;
     border-radius: 3px;
+    font-size: 90%;
 
     .line {
         font-family: inherit;
     }
+}
+
+code {
+    color: $red1;
+    background-color: transparentize($red1, 0.9);
+    font-size: 110%;
+    padding: 0.15em 0.25em;
+    border-radius: $radius1;
 }
 
 /* namespace and class list */
